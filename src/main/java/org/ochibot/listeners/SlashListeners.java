@@ -5,10 +5,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.SlashCommandInteraction;
 import org.jetbrains.annotations.NotNull;
 import org.ochibot.slashactioners.*;
-import org.ochibot.slashactioners.utils.Coin;
-import org.ochibot.slashactioners.utils.HaremSenal;
-import org.ochibot.slashactioners.utils.Sushi;
-import org.ochibot.slashactioners.utils.ValoSenal;
+import org.ochibot.slashactioners.utils.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -81,6 +78,11 @@ public class SlashListeners extends ListenerAdapter {
             SaludoAlfa saludoAlfa = new SaludoAlfa();
             saludoAlfa.onSlashCommandInteraction(event);
         }
-
+/////////////////////////////////////Confesion////////////////////////////////////////////////////////
+        if (interactionEvent.getName().equals("confesion")){
+            System.out.println(event.getInteraction().getMember().getId());
+            Confesion confesion = new Confesion();
+            confesion.onSlashCommandInteraction(event);
+        }
     }
 }

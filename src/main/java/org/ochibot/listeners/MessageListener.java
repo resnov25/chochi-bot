@@ -32,6 +32,7 @@ public class MessageListener extends ListenerAdapter {
         System.out.println(event.getChannel());
         System.out.println(eventMessage);
         System.out.println(eventMember);
+        System.out.println(eventMember.getId());
         System.out.println("---End Of Message---");
         System.out.println("");
 
