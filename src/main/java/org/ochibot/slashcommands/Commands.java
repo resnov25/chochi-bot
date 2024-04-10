@@ -53,4 +53,8 @@ public class Commands extends ListenerAdapter {
     public void saludoAlfa(JDA jda){
         jda.getGuildById(guildId).upsertCommand("saludo_alfa", "Este es el verdadero saludo").queue();
     }
+
+    public void confesion(JDA jda){
+        jda.getGuildById(guildId).upsertCommand("confesion", "Cuentale a Chochi tu secreto").addOption(OptionType.STRING, "secreto", "Escribe tu confesion", true).addOption(OptionType.BOOLEAN, "anonimo", "Elige si quieres que sea anonimo", true) .queue();
+    }
 }

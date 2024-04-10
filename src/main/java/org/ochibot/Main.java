@@ -8,10 +8,15 @@ import org.ochibot.listeners.CallListeners;
 import org.ochibot.listeners.MessageListener;
 import org.ochibot.listeners.SlashListeners;
 import org.ochibot.slashcommands.Commands;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.secretsmanager.SecretsManagerClient;
+import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueRequest;
+import software.amazon.awssdk.services.secretsmanager.model.GetSecretValueResponse;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        JDA bot = JDABuilder.createDefault("MTE3NDAxMDA4NTY2ODgxOTAxNA.GuFPHJ.vCqP6LNVttK1rGUrRFthZnGPOqlrjyC5NBKopE")
+
+        JDA bot = JDABuilder.createDefault("")
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .setActivity(Activity.customStatus("Esperando el sushi"))
                 .addEventListeners(new MessageListener())
@@ -32,6 +37,7 @@ public class Main {
         commands.stare(bot);
         commands.coin(bot);
         commands.valoSenal(bot);
+        commands.confesion(bot);
 
     }
 }

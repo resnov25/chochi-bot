@@ -39,7 +39,7 @@ public class Kiss extends ListenerAdapter {
                 break;
 
             case 4:
-                embedBuilder.setColor(Color.yellow).setImage("https://media.tenor.com/AIygnQ1hqLUAAAAM/hiro-zero.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
+                embedBuilder.setColor(Color.yellow).setImage("https://media1.tenor.com/m/Daj-Pn82PagAAAAC/gif-kiss.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
                 interactionEvent.deferReply().setEmbeds(embedBuilder.build()).queue();
                 break;
 
@@ -54,5 +54,4 @@ public class Kiss extends ListenerAdapter {
                 break;
         }
     }
-
 }
