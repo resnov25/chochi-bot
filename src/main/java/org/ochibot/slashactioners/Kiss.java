@@ -19,7 +19,7 @@ public class Kiss extends ListenerAdapter {
         Random random = new Random();
         EmbedBuilder embedBuilder = new EmbedBuilder();
         OptionMapping optionMapping = interactionEvent.getOption("kissname");
-        int randomNumber = random.nextInt(1, 6);
+        int randomNumber = random.nextInt(1, 9);
 
         switch (randomNumber){
 
@@ -39,12 +39,27 @@ public class Kiss extends ListenerAdapter {
                 break;
 
             case 4:
-                embedBuilder.setColor(Color.yellow).setImage("https://media.tenor.com/AIygnQ1hqLUAAAAM/hiro-zero.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
+                embedBuilder.setColor(Color.yellow).setImage("https://media1.tenor.com/m/lyuW54_wDU0AAAAd/kiss-anime.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
                 interactionEvent.deferReply().setEmbeds(embedBuilder.build()).queue();
                 break;
 
             case 5:
                 embedBuilder.setColor(Color.GREEN).setImage("https://media.tenor.com/Fyq9izHlreQAAAAM/my-little-monster-haru-yoshida.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
+                interactionEvent.deferReply().setEmbeds(embedBuilder.build()).queue();
+                break;
+
+            case 6:
+                embedBuilder.setColor(Color.BLUE).setImage("https://media1.tenor.com/m/ye6xtORyw_8AAAAC/2.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
+                interactionEvent.deferReply().setEmbeds(embedBuilder.build()).queue();
+                break;
+
+            case 7:
+                embedBuilder.setColor(Color.WHITE).setImage("https://media1.tenor.com/m/OGyQDLedJWwAAAAC/lesbian-anime.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
+                interactionEvent.deferReply().setEmbeds(embedBuilder.build()).queue();
+                break;
+
+            case 8:
+                embedBuilder.setColor(Color.MAGENTA).setImage("https://media1.tenor.com/m/kyM-QWHWy1cAAAAC/anime-kissing.gif").setDescription("Pero mira ese beso <@" + autorId + "> le anda metiendo lengua a <@" + optionMapping.getAsUser().getId() + ">! ").setTitle("MUA").setFooter("Consiganse un cuarto");
                 interactionEvent.deferReply().setEmbeds(embedBuilder.build()).queue();
                 break;
 
