@@ -32,6 +32,7 @@ public class Main {
         commands.stare(bot);
         commands.coin(bot);
         commands.valoSenal(bot);
+        commands.spank(bot);
 
     }
 }
