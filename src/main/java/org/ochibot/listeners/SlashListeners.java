@@ -81,6 +81,10 @@ public class SlashListeners extends ListenerAdapter {
             SaludoAlfa saludoAlfa = new SaludoAlfa();
             saludoAlfa.onSlashCommandInteraction(event);
         }
-
+/////////////////////////////////////Spank////////////////////////////////////////////////////////
+        if (interactionEvent.getName().equals("spank")){
+            Spank spank = new Spank();
+            spank.onSlashCommandInteraction(event);
+        }
     }
 }
